@@ -20,7 +20,6 @@ par(mfrow = c(2,2))
 
 plot(temp$datetime, temp$Global_active_power, type="l", xlab = "",ylab = "Global Active Power")
 plot(temp$datetime, temp$Voltage, type="l", xlab = "datetime",ylab = "Voltage")
-
 plot(temp$datetime, temp$Sub_metering_1, type="l", xlab = "",ylab = "",axes=FALSE, col = "black", ylim=c(0,38))
 axis(2,ylim=c(0,38), col="black")
 mtext("Energy sub metering",side=2, line=2.5)
