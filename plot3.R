@@ -1,3 +1,5 @@
+##plot 3
+
 dataset<-read.table("household_power_consumption.txt", head=TRUE, sep=";")
 dataset$datetime <- strptime(paste(dataset$Date, dataset$Time), format="%d/%m/%Y %H:%M:%S")
 dataset[,1] <- as.Date(dataset$Date, "%d/%m/%Y")
